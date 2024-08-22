@@ -81,6 +81,10 @@
 import { useForm } from "vee-validate";
 import * as yup from "yup";
 
+definePageMeta({
+  layout: "auth",
+});
+
 // Define the validation schema using yup
 const validationSchema = yup.object({
   email: yup.string().email("Invalid email address").required("Email is required"),
