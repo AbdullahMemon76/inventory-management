@@ -1,9 +1,10 @@
 <template>
   <div class="flex justify-center">
     <nav
-      class="flex fixed border w-[98%] shadow-md my-2 bg-white z-50 rounded-lg gap-9 py-5 px-7 items-center justify-between"
+    class="flex fixed border w-[98%] shadow-md my-2 bg-white z-50 rounded-lg gap-9 py-5 px-7 items-center justify-between"
     >
-      <div class="font-bold text-2xl">LOGO</div>
+    <div class="font-bold text-2xl">LOGO</div>
+
       <div class="flex gap-8">
         <NuxtLink class="hover:opacity-70 transition-all cursor-pointer" href="/"
           >Home</NuxtLink
@@ -13,7 +14,8 @@
         >
       </div>
       <div class="">
-        <Button @click="pushToRegister" href="/">Register</Button>
+        <!-- <NuxtLink to="#" class="font-bold">Dashboard</NuxtLink> -->
+        <Button @click="pushToLogin" href="/">Login</Button>
       </div>
     </nav>
   </div>
@@ -165,8 +167,8 @@ definePageMeta({
 
 const router = useRouter();
 
-function pushToRegister() {
-  router.push("/auth/register");
+function pushToLogin() {
+  router.push("/auth/login");
 }
 
 // No imports needed due to Nuxt 3's auto-import functionality

@@ -52,7 +52,7 @@
               />
               <p class="text-red-500">{{ errors.lastname }}</p>
             </div>
-            <div class="space-y-2">
+            <!-- <div class="space-y-2">
               <Label for="bio">Bio</Label>
               <Textarea
                 id="bio"
@@ -62,7 +62,7 @@
                 class="min-h-[100px]"
               />
               <p class="text-red-500">{{ errors.bio }}</p>
-            </div>
+            </div> -->
           </div>
           <Button class="w-full" type="submit">Register</Button>
           <NuxtLink

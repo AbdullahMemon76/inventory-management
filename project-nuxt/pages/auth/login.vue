@@ -1,13 +1,13 @@
 <template>
   <div class="flex items-stretch min-h-screen px-4">
+
     <div class="mx-auto my-12 max-w-sm w-full">
       <div class="space-y-6">
         <div class="space-y-2">
           <h1 class="text-3xl font-extrabold tracking-tighter">
-            Welcome Again to Our Platform
+            
           </h1>
-
-          <h2 class="text-2xl font-semibold tracking-tighter">Login</h2>
+          <h1 class="text-3xl font-semibold tracking-tighter">Login</h1>
         </div>
         <form @submit="onSubmit" class="space-y-10">
           <div class="space-y-2">
@@ -33,6 +33,7 @@
                 v-bind="passwordAttrs"
                 v-model="password"
                 type="password"
+                placeholder="Xyz@6986"
               />
               <p class="text-red-500">
                 {{ errors?.password }}
@@ -41,10 +42,10 @@
           </div>
           <Button class="w-full">Login</Button>
           <NuxtLink
-            href="/auth/register"
+            href="/"
             class="inline-flex items-center justify-center rounded-md border border-gray-200 bg-white h-10 w-full px-4 text-sm shadow-sm transition-colors hover:bg-gray-100 hover:text-gray-900 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-gray-950 dark:border-gray-800 dark:bg-gray-950 dark:hover:bg-gray-950 dark:hover:text-gray-50 dark:focus-visible:ring-gray-300"
           >
-            Continue With Registration
+            Back To Home
           </NuxtLink>
         </form>
       </div>
